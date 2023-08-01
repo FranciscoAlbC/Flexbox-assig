@@ -1,0 +1,231 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+header h1 {
+    font-family: 'Dancing Script', sans-serif;
+    margin: 4.5rem 0;
+    font-size: 10rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Edu SA Beginner', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-bottom: 5rem;
+}
+
+nav li {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+li a {
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+
+a:hover {
+    color: red;
+    cursor: pointer;
+}
+
+a:visited { 
+    color: black;
+    cursor: pointer;
+}
+
+
+#banner {
+    width: 80%;
+    height: 45.5rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('https://images.unsplash.com/photo-1505744386214-51dba16a26fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1606&q=80');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#banner .banner_info {
+    width: 100%;
+    height: 17.5rem;
+    text-align: center;
+    font-family: 'Edu SA Beginner', sans-serif;
+    background-color: rgba(255, 239, 213, 0.5)
+}
+
+h2 {
+    font-size: 4.2rem;
+}
+
+.banner_info h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+#portfolio {
+    font-family: 'Edu SA Beginner', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5.625rem 0;
+}
+
+
+.img_container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 2.6rem;
+}
+
+#portfolio img {
+    max-width: 30%;
+    height: auto;
+    vertical-align: middle;
+    object-fit: cover;
+    border-radius: 1.875rem;
+}
+
+#us {
+    font-family: 'Edu SA Beginner', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.us-main-container {
+    background-image: url('https://images.unsplash.com/photo-1512950050685-b1d4ae63d2df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.us-container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 18rem 0;
+}
+
+.us-container img {
+    max-width: 50%;
+    min-width: 19rem;
+    height: auto;
+    overflow: hidden;
+}
+
+.text-container {
+    padding-bottom: 5rem;
+}
+
+.text-container h3 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.text-container p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+footer {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Edu SA Beginner', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 966px) {
+
+    header nav {
+        display: none;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    #portfolio img {
+        max-width: 45%;
+    }
+
+}
+
+@media only screen and (max-width: 770px) {
+
+    #portfolio .img_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.6rem;
+    }
+
+    #portfolio img {
+        max-width: 90%;
+    }
+
+    .us-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .us-container img{
+        margin: 0 auto;
+    }
+
+    #banner, #us {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 547px) {
+
+    header h1 {
+        font-size: 7.1rem;
+    }
+
+    .us-container img {
+        min-width: 10rem;
+    }
+}
+
+@media only screen and (max-width: 442px) {
+
+    h2 {
+        font-size: 2.9rem;
+    }
+
+    .banner_info {
+        background-color: background-color: rgba(255, 239, 213, 0.3);
+    }
+
+}
+
+@media only screen and (max-width: 393px) {
+
+    header h1 {
+        font-size: 5.5rem;
+    }
+}
